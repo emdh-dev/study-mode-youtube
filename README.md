@@ -1,16 +1,12 @@
-This is the master branch for Study Mode: YouTube.  There is nothing stored here - to check out code for an individual browser (Chrome or Firefox), check out its corresponding branch.
-
-There are not many differences between the Firefox and Chrome source code; most of this code works cross-platform (source: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Build_a_cross_browser_extension).  Minor changes listed on that page had to be made, such as the browser vs. chrome API namespace, how files are referenced by functions (../folder/file vs. /folder/file - see popup/toolbar-menu.js for examples), as well as slight formatting differences.  Appearance should be consistent across Windows and Linux versions of Firefox and Chrome (have not tested MacOS, but it should work as well).  
-
-Thank you for checking out this repository!
-
-
-
 # Study Mode: YouTube 
 A browser extension that allows you to focus and study during your video browsing session by removing all distractions from YouTube - homepage
 videos, the notification badge, autoplay, sidebar recommended videos, displayed comments, and the wall of suggested videos that appears once a video ends.
 
 Created for serious study/learning/focus sessions.
+
+This is an open source project, meaning that this is all of the code that makes up the Study Mode: YouTube browser extension.  Notice any issues or want to help out with development?  Feel free to create a pull request, or contact me at EMDHdev@gmail.com.  
+
+Download Study Mode: YouTube for Firefox browsers here: https://addons.mozilla.org/en-US/firefox/addon/study-mode-youtube/
 
 Thank you so much for downloading my browser extension,
 and I hope you enjoy it!
@@ -73,8 +69,3 @@ activeTab is used in order to apply changes to the current tab of YouTube.
 
 localStorage is also used in this extension and is used to store the options you have selected in the extension for future access - both in new tabs,
 and in new windows.  Access and retrieval of only these customization options are used.
-
-
-#### License
-
-The license for this project is attached on the master branch, and applies for all code written for every branch in Study Mode: YouTube.

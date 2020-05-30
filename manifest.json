@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Study Mode: YouTube",
+  "version": "1.0",
+
+  "description": "Enhance your YouTube study sessions, no more distractions.",
+
+  "icons": {
+    "48": "icons/toolbar-icon48.png",
+    "128": "icons/toolbar-icon128.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/toolbar-icon48.png",
+    "default_title": "Study Mode: YouTube",
+    "default_popup": "popup/toolbar-menu.html"
+  }
+}
