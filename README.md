@@ -1,16 +1,12 @@
-This is the master branch for Study Mode: YouTube.  There is nothing stored here - to check out code for an individual browser (Chrome or Firefox), check out its corresponding branch.
-
-There are not many differences between the Firefox and Chrome source code; most of this code works cross-platform (source: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Build_a_cross_browser_extension).  Minor changes listed on that page had to be made, such as the browser vs. chrome API namespace, how files are referenced by functions (../folder/file vs. /folder/file - see popup/toolbar-menu.js for examples), as well as slight formatting differences.  Appearance should be consistent across Windows and Linux versions of Firefox and Chrome (have not tested MacOS, but it should work as well).  
-
-Thank you for checking out this repository!
-
-
-
 # Study Mode: YouTube 
 A browser extension that allows you to focus and study during your video browsing session by removing all distractions from YouTube - homepage
 videos, the notification badge, autoplay, sidebar recommended videos, displayed comments, and the wall of suggested videos that appears once a video ends.
 
 Created for serious study/learning/focus sessions.
+
+This is an open source project, meaning that this is all of the code that makes up the Study Mode: YouTube browser extension. Notice any issues or want to help out with development? Feel free to create a pull request, or contact me at EMDHdev@gmail.com.
+
+Download Study Mode: YouTube for Chrome browsers here: https://chrome.google.com/webstore/detail/study-mode-youtube/hhjnoabnlicjpahfibejifhankpfahnd?hl=en
 
 Thank you so much for downloading my browser extension,
 and I hope you enjoy it!
@@ -18,7 +14,7 @@ and I hope you enjoy it!
 
 ## How to use
 
-Simply click this extension's button in your Firefox browser's toolbar (small icon with white background, red text and image) and select the checkbox for any 
+Simply click this extension's button in your Chrome browser's toolbar (small icon with white background, red text and image) and select the checkbox for any 
 option you wish to apply to your current tab of YouTube - you can apply as many options as you'd like!  These options are only saved for the
 current tab you made changes to.  If you want to apply these changes to any other tab or window with YouTube open, all you have to do is 
 simply click the browser extension to open it (no need to re-select the checkboxes), and all changes will be applied!  
@@ -59,22 +55,12 @@ Feel free to email me about any desired features you have and feedback about thi
 
 ### Permissions
 
-User data is not required nor accessed by this extension - I am a user of this extension too, and believe heavily in the protection of users'
-privacy and personal data.
+User data is not required nor accessed by this extension - I am a user of this extension too, and believe heavily in the protection of users' privacy and personal data.
 
-I am not collecting anything, nor is it possible for me to retrieve anything; below is an explanation of permissions in Study Mode: YouTube with
-definitions copied from Mozilla's developer page.
+I am not collecting anything, nor is it possible for me to retrieve anything; below is an explanation of permissions in Study Mode: YouTube with definitions copied from Chrome's developer page.
 
-
-activeTab: If an extension has the activeTab permission, then when the user interacts with the extension, the extension is granted extra privileges
-for the active tab only.
+activeTab: The activeTab permission gives an extension temporary access to the currently active tab when the user invokes the extension - for example by clicking its browser action. Access to the tab lasts while the user is on that page, and is revoked when the user navigates away or closes the tab.
 
 activeTab is used in order to apply changes to the current tab of YouTube.
 
-localStorage is also used in this extension and is used to store the options you have selected in the extension for future access - both in new tabs,
-and in new windows.  Access and retrieval of only these customization options are used.
-
-
-#### License
-
-The license for this project is attached on the master branch, and applies for all code written for every branch in Study Mode: YouTube.
+localStorage is also used in this extension and is used to store the options you have selected in the extension for future access - both in new tabs, and in new windows. Access and retrieval of only these customization options are used.

@@ -1,0 +1,47 @@
+/* First three rules are to keep Firefox and Chrome design consistent. */
+html * {
+	font-family: Arial !important;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+.text {
+	font-size: 14px;
+}
+
+#browser-extension-icon-fullsize {
+	display: block !important;
+	margin-top: 25px !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-bottom: 10px !important;
+}
+
+/* Rules after are to individually style components. */
+#actual-popup {
+	width: 300px !important;
+	height: 320px !important;
+}
+
+#title-bar {
+	margin-top: -20px !important;
+	margin-bottom: -20px !important;
+}
+
+#title-text {
+	color: #FF0000;
+	text-align: center;
+}
+
+#contact-text {
+	background: #e3e3e3;
+	border-top: 1px solid black;
+	margin-left: -8px !important;
+	margin-right: -8px !important;
+	margin-bottom: -15px !important;
+	color: #5e5e5e;
+	font-size: 14px !important;
+	text-align: center;
+}
