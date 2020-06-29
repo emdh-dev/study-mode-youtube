@@ -14,6 +14,11 @@
     "activeTab"
   ],
 
+  "browser_specific_settings": {
+    "gecko": {
+    }
+  },
+
   "browser_action": {
     "default_icon": "icons/toolbar-icon48.png",
     "default_title": "Study Mode: YouTube",
